@@ -1,0 +1,18 @@
+---
+
+- name: Converge
+  hosts: all
+  become: true
+  gather_facts: true
+
+  pre_tasks:
+
+    - name: Ensure build dependencies are installed
+      package:
+        name:
+          - openssh-server
+          - openssh-client
+        state: present
+
+  roles:
+    - role: ricsanfre.security
