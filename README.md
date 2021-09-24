@@ -1,6 +1,8 @@
 Ansible Role: Security
 =========
 
+[![CI](https://github.com/ricsanfre/ansible-role-security/actions/workflows/ci.yml/badge.svg)](https://github.com/ricsanfre/ansible-role-security/actions/workflows/ci.yml)
+
 Security hardening tasks on Linux.
 
 - SSH access hardening
